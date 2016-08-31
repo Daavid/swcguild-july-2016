@@ -1,0 +1,17 @@
+ .title {
+ 	text-align: center;
+ 	font-size: 275%;
+       }
+ .yellowbackground{
+    background-color: yellow;
+          }
+.greentext{ 
+	color: green;
+	text-align: center;
+          }
+.footertable {
+	width: 400;
+	margin-left:auto; 
+    margin-right:auto;
+    text-align: center;
+}

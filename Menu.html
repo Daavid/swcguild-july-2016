@@ -2,56 +2,82 @@
 <html>
    <head>
       <title> Menu</title>
+  <!DOCTYPE html>
+<html>
+   <head>
+      <title> Menu</title>
+      <style type="text/css"> 
+      .item {
+        width: 33.33%;
+    width: calc(100% / 3);
+    font-size: 250%
+      }
+      .description {
+        width: 33.33%;
+    width: calc(100% / 3);
+      }
+
+    </style>
+      <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
   </head>
      <body>
-        <div>
-          <center><h1>La Casas Pizza</h1></center>
-        </div>
+      <div id="page">
+          <header>
+             <center><h1 class="title">La Casas Pizza</h1></center>
+        
         <hr width="100%">
-    <table>
+         <nav>
+    <table id="header">
         <tr>             
-            <td><a href="Restaurant.html">Home</a></td>   
-            <td><a href="Menu.html">Menu</a></td>     
-            <td><a href="contactUsRestaurant.html">Contact Us</a></td>    
+            <td class = "yellowbackground"><a href="Restaurant.html">Home</a></td>   
+            <td class = "yellowbackground"><a href="Menu.html">Menu</a></td>     
+            <td class = "yellowbackground"><a href="contactUsRestaurant.html">Contact Us</a></td>    
       </tr> 
     </table> 
+    </nav>
+     </header>
             <hr width="100%">
     <table>
      <tr>
-        <th width="33%"> <FONT SIZE = "5">Cheese Bread</th>
-        <th width="33%"> <FONT SIZE = "5">Garlic Bread</th>
-        <th width="33%"> <FONT SIZE = "5">Toasted Ravioli</th>
+        <th class="item">Cheese Bread</th>
+        <th class="item">Garlic Bread</th>
+        <th class="item">Toasted Ravioli</th>
      </tr>
      <tr>
-         <td width="33%" align="center"> Four slices of buttered Italian bread, topped with mozzarella
+         <td class="description"> Four slices of buttered Italian bread, topped with mozzarella
           and baked. 6.09 Half Order 3.29</td>
-         <td width="33%" align="center"> Four slices of lightly oiled Italian bread, topped with garlic and
+         <td class="description"> Four slices of lightly oiled Italian bread, topped with garlic and
         grated romano cheese, then baked. 6.09 Half Order 3.29</td>
-         <td width="33%" align="center">Meat-filled ravioli, hand breaded, and deep fried. Served with our meat sauce. 8.19 Half Order 4.65</td>
+         <td class="description">Meat-filled ravioli, hand breaded, and deep fried. Served with our meat sauce. 8.19 Half Order 4.65</td>
       </tr>
     </table>
  
     <table>
      <tr>
-       <th width="33%"><FONT SIZE = "5"> Pizza Margherita</th>
-        <th width="33%"><FONT SIZE = "5"> Vegetarian Combo</th>
-        <th width="33%"><FONT SIZE = "5"> Quattro Formaggio</th>
+       <th class="item"> Pizza Margherita</th>
+        <th class="item"> Vegetarian Combo</th>
+        <th class="item"> Quattro Formaggio</th>
        </tr>
        <tr>
-       <td width="33%" align="center">Our classic thin crust brushed with garlic olive oil, topped with our homemade tomato sauce, diced roma tomatoes,
+       <td class="description">Our classic thin crust brushed with garlic olive oil, topped with our homemade tomato sauce, diced roma tomatoes,
         fresh basil, oregano, mozzarella, and a touch of romano cheese. 10.99 Add chicken for 1.45, 1.80, 2.05.</td>
-        <td width="33%" align="center">Diced tomatoes, mushrooms, black olives, onions, and green peppers with romano or mozzarella cheese. 10.99</td>
-        <td width="33%" align="center">Four cheeses romano, mozzarella, asiago, and white cheddar with tomato sauce. 10.99</td>
+        <td class="description">Diced tomatoes, mushrooms, black olives, onions, and green peppers with romano or mozzarella cheese. 10.99</td>
+        <td class="description">Four cheeses romano, mozzarella, asiago, and white cheddar with tomato sauce. 10.99</td>
     </tr>
     </table>
          <hr width="100%">
-<table align ="center" width="400">
-      <tr>
-        <td>4432 Leavenworth Street, Omaha, Nebraska, 68105 </td>
-        </tr>
-          <tr>
-            <td align="center">(402) 556-6464</td>
-          </tr>
-    </table>
+
+       <footer>
+         <table align="center" class="footertable">
+                
+            <tr>
+                <td class="greentext">4432 Leavenworth Street, Omaha, Nebraska, 68105 </td>
+            </tr>
+            <tr>
+                <td class="greentext">(402) 556-6464</td>
+            </tr>
+        </table> 
+     </footer> 
+    </div>
  </body>
 </html>

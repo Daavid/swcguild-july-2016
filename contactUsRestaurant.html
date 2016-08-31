@@ -2,38 +2,52 @@
 <html>
    <head>
     <title> Contact Us</title>
+    <style type="text/css"> 
+      .alignright {
+        text-align:right;
+      }
+      .alignleft {
+        text-align: left;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
   </head>
      <body>
-        <div>
-           <center><h1>La Casas Pizza</h1></center>
-        </div>
+      <div id="page">
+          <header>
+        
+           <center><h1 class="title">La Casas Pizza</h1></center>
+        
         <hr width="100%">
+         <nav>
         <table>
             <tr>             
-              <td><a href="Restaurant.html">Home</a></td>   
-              <td><a href="Menu.html">Menu</a></td>     
-              <td><a href="contactUsRestaurant.html">Contact Us</a></td>    
+              <td class = "yellowbackground"><a href="Restaurant.html">Home</a></td>   
+              <td class = "yellowbackground"><a href="Menu.html">Menu</a></td>     
+              <td class = "yellowbackground"><a href="contactUsRestaurant.html">Contact Us</a></td>    
             </tr> 
             </table> 
+             </nav>
+            </header>
           <hr width="100%">
         <form action="fakePage.html" method="POST"> 
   <table align="center" width="350">
     <tr>
-      <td align="right"> Name:</td>
-      <td align="left"><input type="text" name="first" /></td>
+      <td class="alignright"> Name:</td>
+      <td class="alignleft"><input type="text" name="first" /></td>
     </tr>
     <tr>
-      <td align="right">Email:</td>
-      <td align="left"><input type="text" name="email" /></td>
+      <td class="alignright">Email:</td>
+      <td class="alignleft"><input type="text" name="email" /></td>
     </tr>
     <tr>
-      <td align="right">Phone:</td>
-      <td align="left"><input type="text" name="phone" /></td>
+      <td class="alignright">Phone:</td>
+      <td class="alignleft"><input type="text" name="phone" /></td>
     </tr>
    
     <tr>
-       <td align="right">Reason for Inquiry: </td>
-       <td align="left"><select name="catering">     
+       <td class="alignright">Reason for Inquiry: </td>
+       <td class="alignleft"><select name="catering">     
                  <option value="Catering">Catering</option> 
                  <option value="Private Party">Private Party</option>  
                  <option value="Feedback">Feedback</option> 
@@ -41,41 +55,41 @@
                          </select></td> 
     </tr>
     <tr>
-        <td align="right">Additional Information: </td>
-        <td align="left"><textarea rows="6" cols="22" name="briefDescription">     </textarea></td> 
+        <td class="alignright">Additional Information: </td>
+        <td class="alignleft"><textarea rows="6" cols="22" name="briefDescription">     </textarea></td> 
     </tr>
      <tr>
-      <td align="right">Have you been to the restaurant?:</td>
+      <td class="alignright">Have you been to the restaurant?:</td>
       <td><input type="radio" name="answer" value="No" checked>No<input type="radio" name="answer" value="Yes">Yes </td> 
     </tr> 
     <tr>
-            <td align ="right">Best days to contact you:</td>
+         <td class="alignright">Best days to contact you:</td>
 
-            <td align="left"><input type="checkbox" name="days of week" value="M" checked>M
-              <input type="checkbox" name="days of week" value="T">T
-              <input type="checkbox" name="days of week" value="W">W
-              <input type="checkbox" name="days of week" value="Th">Th
-              <input type="checkbox" name="days of week" value="F">F</td>     
+        <td class="alignleft"><input type="checkbox" name="days of week" value="M" checked>M
+            <input type="checkbox" name="days of week" value="T">T
+            <input type="checkbox" name="days of week" value="W">W
+            <input type="checkbox" name="days of week" value="Th">Th
+            <input type="checkbox" name="days of week" value="F">F</td>     
             
     </tr>
     <tr> 
-          <td align="left"></td>   
+          <td class="alignleft"></td>   
           <td><input type="submit" value ="Send Request"></td> 
     </tr>                 
    </table>
+   </form>
    <hr width="100%">
-
-        <table align ="center" width="400">
+   <footer>
+         <table align="center" class="footertable">
                 
             <tr>
-                <td>4432 Leavenworth Street, Omaha, Nebraska, 68105 </td>
+                <td class="greentext">4432 Leavenworth Street, Omaha, Nebraska, 68105 </td>
             </tr>
             <tr>
-                <td align="center">(402) 556-6464</td>
+                <td class="greentext">(402) 556-6464</td>
             </tr>
-        </table>  
-      </body>
-</html>
-  </form>
+        </table> 
+     </footer> 
+    </div>
  </body>
 </html>
