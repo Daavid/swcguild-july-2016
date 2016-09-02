@@ -1,8 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Kalam);
 ul {
     color: red;
     /* This is a single-line comment */
-    text-align: center;
 }
 tr {
-	background-color: #B0E0E6;
+	background-color:  #B0E0E6;
 }
+h1, h3 { font-family: 'Kalam', cursive;}
