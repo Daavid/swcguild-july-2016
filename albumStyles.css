@@ -4,6 +4,20 @@ ul {
     /* This is a single-line comment */
 }
 tr {
-	background-color:  #B0E0E6;
+	background-color: pink;
 }
 h1, h3 { font-family: 'Kalam', cursive;}
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+   
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: underline;
+    background-color: pink;
+}
