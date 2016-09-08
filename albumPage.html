@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
    <head>
-    <link rel="stylesheet" type="text/css" href="albumStyles.css">
+    
       <title> Rush-Grace Under Pressure</title>
+     
       <style>
           h1, h2 { text-align:center; }
           h3 {font-weight: normal;}
          li, td {font-style:italic;}
       </style>
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="albumStyles.css">
   </head>
    <body>
-   <div style="background-image: url(grace.jpg); background-repeat: no-repeat; background-size: 300px 300px; width:300px; height:300px; margin: 0 auto;">
+   <div>
+    <img src="grace.jpg" class="img-circle center-block"/>
      </div>
         <h1>Grace Under Pressure</h1>
         <h2> <a href="http://www.rush.com">Rush</a></h2>
@@ -25,8 +31,8 @@
     </ul> 
         <center><h3 style="color:purple;">Tracks</h3></center>
 
-
-        <center><table border="1" width="80%">  
+      <div class="table-responsive"> 
+        <table class="table table-striped" border="1" width="80%">  
             <tr>  
                 <th bgcolor= grey>Track #</th> 
                 <th bgcolor= grey>Track Title</th> 
@@ -72,7 +78,7 @@
                 <td>Between the Wheels</td>             
                 <td>5:44</td>         
             </tr>     
-
-        </table>   </center>
+          </table>  
+        </div>
       </body>
 </html>
