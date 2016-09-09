@@ -1,7 +1,14 @@
- @import url(https://fonts.googleapis.com/css?family=Kalam);
+
+	 #page { 
+      background-color: #ffc500;
+      }
+	body
+{
+    padding-top: 0px;
+}
 	 .title {
 	 	text-align: center;
-	 	font-size: 275%;
+	 	font-size: 250%;
 	 	font-family: Times;
 	       }
 	.blacktext{ 
@@ -13,6 +20,7 @@
 		width: 400;
 		margin-left:auto; 
 	    margin-right:auto;
+	    bottom: 0;
 	}
 	a:link {
 }
@@ -28,3 +36,8 @@ a:hover {
 a:active {
     text-decoration: none;
 } 
+table.center {
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+  }

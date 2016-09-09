@@ -3,36 +3,19 @@
      <head>
         <title> Menu</title>
         <style type="text/css"> 
-        .item {
-          width: 33.33%;
-      width: calc(100% / 3);
-      font-size: 200%
-        }
-        .description {
-          width: 33.33%;
-      width: calc(100% / 3);
-        }
         #page { 
       background-color: #ffc500;
       }
-      a:link {
+      header{
+    margin-top: -1.5%;
+  }
+     </style>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-}
-
-a:visited {
-    background-color: red;
-}
-
-a:hover {
-    font-weight: bold;
-}
-
-a:active {
-    text-decoration: none;
-} 
-
-
-      </style>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
     </head>
        <body>
@@ -41,68 +24,65 @@ a:active {
               <h1 class="title">La Casas Pizza</h1>
           
           <hr width="100%">
-           <nav>
-      <table id="header">
-          <tr>             
-              <td><a href="Restaurant.html">Home</a></td>   
-              <td><a href="Menu.html">Menu</a></td>     
-              <td><a href="contactUsRestaurant.html">Contact Us</a></td>    
-        </tr> 
-      </table> 
-      </nav>
+           <ul class="nav nav-tabs">
+  <li class="active"><a href="Restaurant.html"> <span class="glyphicon glyphicon-home"></span>Home</a></li>
+  <li><a href="Menu.html">Menu</a></li>
+  <li><a href="contactUsRestaurant.html">Contact Us</a></li>
+</ul>
        </header>
-              <hr width="100%">
-      <table>
-       <tr>
-          <th class="item">Cheese Bread</th>
-          <th class="item">Garlic Bread</th>
-          <th class="item">Toasted Ravioli</th>
-       </tr>
-       <tr>
-           <td class="description"> Four slices of buttered Italian bread, topped with mozzarella
-            and baked. 6.09 Half Order 3.29</td>
-           <td class="description"> Four slices of lightly oiled Italian bread, topped with garlic and
-          grated romano cheese, then baked. 6.09 Half Order 3.29</td>
-           <td class="description">Meat-filled ravioli, hand breaded, and deep fried. Served with our meat sauce. 8.19 Half Order 4.65</td>
-        </tr>
-      </table>
-   
-      <table>
-       <tr>
-         <th class="item"> Pizza Margherita</th>
-          <th class="item"> Vegetarian Combo</th>
-          <th class="item"> Quattro Formaggio</th>
-         </tr>
-         <tr>
-         <td class="description">Our classic thin crust brushed with garlic olive oil, topped with our homemade tomato sauce, diced roma tomatoes,
-          fresh basil, oregano, mozzarella, and a touch of romano cheese. 10.99 Add chicken for 1.45, 1.80, 2.05.</td>
-          <td class="description">Diced tomatoes, mushrooms, black olives, onions, and green peppers with romano or mozzarella cheese. 10.99</td>
-          <td class="description">Four cheeses romano, mozzarella, asiago, and white cheddar with tomato sauce. 10.99</td>
-      </tr>
-      </table>
-       <hr width="100%">
+              
+      <div class="container-fluid">
+       <div class="row">
+        <div class="col-sm-4">
+          <h2>Cheese Bread</h2>
+          <p> Four slices of buttered Italian bread, topped with mozzarella
+            and baked. 6.09 Half Order 3.29</p>
+          </div>
+        <div class="col-sm-4">
+          <h2>Garlic Bread</h2>
+          <p> Four slices of lightly oiled Italian bread, topped with garlic and
+          grated romano cheese, then baked. 6.09 Half Order 3.29</p>
+        </div>
+        <div class="col-sm-4">
+         <h2>Toasted Ravioli</h2>
+         <p>Meat-filled ravioli, hand breaded, and deep fried. Served with our meat sauce. 8.19 Half Order 4.65</p>
+       </div>
+     </div>
+    </div>
+        <div class="container-fluid">
+       <div class="row">
+        <div class="col-sm-4">
+          <h2>Pizza Margherita</h2>
+          <p> Our classic thin crust brushed with garlic olive oil, topped with our homemade tomato sauce, diced roma tomatoes,
+          fresh basil, oregano, mozzarella, and a touch of romano cheese. 10.99 Add chicken for 1.45, 1.80, 2.05</p>
+          </div>
+        <div class="col-sm-4">
+          <h2>Vegetarian Combo</h2>
+          <p> Diced tomatoes, mushrooms, black olives, onions, and green peppers with romano or mozzarella cheese. 10.99</p>
+        </div>
+        <div class="col-sm-4">
+         <h2>Quattro Formaggio</h2>
+         <p>Four cheeses romano, mozzarella, asiago, and white cheddar with tomato sauce. 10.99</p>
+       </div>
+     </div>
 
-        <center><table>
-          <tr>
-          <th class="item" align="center" style="text-decoration:underline">Beverages</th>
-        </tr>
-        <tr>
-          <td class="description">Root Beer </td>
-          <td class="description">3.00</td>
-        </tr>
-        <tr>
-          <td class="description">Bottled Water</td>
-          <td class="description">1.25</td>
-        </tr>
-        <tr>
-          <td class="description">Lemonade</td>
-          <td class="description">1.00</td>
-        </tr>
-        <tr>
-          <td class="description">Iced Tea</td>
-          <td class="description">1.25</td>
-         </tr>
-        </table></center>
+      <div class="container-fluid">
+       <div class="row">
+        <div class="col-sm-4">
+          </div>
+        <div class="col-sm-4">
+          <h2 style="text-decoration:underline">Beverages</h2>
+          <p> Root Beer   3.00</p>
+          <p> Bottled Water   1.25</p>
+          <p> Lemonade  1.00</p>
+          <p> Iced Tea   1.25</p>
+         </div>
+        <div class="col-sm-4">
+         </div>
+       </div>  
+    </div>
+
+       
       
            <hr width="100%">
 
@@ -110,7 +90,7 @@ a:active {
            <table class="footertable">
                   
               <tr>
-                  <td class="blacktext">4432 Leavenworth Street, Omaha, Nebraska, 68105 </td>
+                  <td class="blacktext">4432 Leavenworth Street Omaha, Nebraska 68105 </td>
               </tr>
               <tr>
                   <td class="blacktext">(402) 556-6464</td>
