@@ -1,38 +1,60 @@
-   <!DOCTYPE html>
+  <!DOCTYPE html>
     <html>
        <head>
         <title> Contact Us</title>
-        <style type="text/css"> 
-          .alignright {
-            text-align:right;
-        font-weight: bold;
-          }
-          .alignleft {
-            text-align: left;
-          }
-          #page { 
-        background-color: #ffc500;
-        }
-        a:link {
-        
+         <style type="text/css">
+   header {
+    background-color: green;
+    }
+    body{
+      background-color: white;
+    }
+    footer {
+      position:fixed;
+      left:0px;
+      bottom:0px;
+      height:35px;
+      width:100%;  
+      background-color: #FF5E46;
+    }
+    .nav-tabs a {
+      color:black;
+    }
+    .alignright {
+      text-align:right;
+  font-weight: bold;
+    }
+    .alignleft {
+      text-align: left;
+    }
+    #page {
+  background-color: ;
   }
-
+  a:link {
+       
+  }
+ 
   a:visited {
       background-color: red;
   }
-
+ 
   a:hover {
       font-weight: bold;
   }
-
+ 
   a:active {
       text-decoration: none;
-  } 
+  }
   header{
     margin-top: -1.5%;
   }
   body{
     margin-bottom: 5%;
+  }
+  .form-horizontal{
+     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
         </style>
          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -41,79 +63,111 @@
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
       </head>
          <body>
+           <noscript>
+              For full functionality of this site it is necessary to enable JavaScript.Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.
+            </noscript>
           <div id="page">
               <header>
-            
                <h1 class="title">La Casas Pizza</h1>
-            
-            <hr width="100%">
+           <hr width="100%">
              <ul class="nav nav-tabs">
-  <li class="active"><a href="Restaurant.html"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
+  <li><a href="Restaurant.html"> <span class="glyphicon glyphicon-home"></span> Home</a></li>
   <li><a href="Menu.html">Menu</a></li>
-  <li><a href="contactUsRestaurant.html">Contact Us</a></li>
+  <li class="active"><a href="contactUsRestaurant.html">Contact Us</a></li>
 </ul>
                 </header>
-            
-            <form action="fakePage.html" method="POST"> 
-      <table align="center" width="500">
-        <tr>
-          <td class="alignright"> Name:</td>
-          <td class="alignleft"><input type="text" name="first" /></td>
-        </tr>
-        <tr>
-          <td class="alignright">Email:</td>
-          <td class="alignleft"><input type="text" name="email" /></td>
-        </tr>
-        <tr>
-          <td class="alignright">Phone:</td>
-          <td class="alignleft"><input type="text" name="phone" /></td>
-        </tr>
-       
-        <tr>
-           <td class="alignright">Reason for Inquiry: </td>
-           <td class="alignleft"><select name="catering">     
-                     <option value="Catering">Catering</option> 
-                     <option value="Private Party">Private Party</option>  
-                     <option value="Feedback">Feedback</option> 
-                     <option value="Other">Other</option>   
-                             </select></td> 
-        </tr>
-        <tr>
-            <td class="alignright">Additional Information: </td>
-            <td class="alignleft"><textarea rows="6" cols="22" name="briefDescription">     </textarea></td> 
-        </tr>
-         <tr>
-          <td class="alignright">Have you been to the restaurant?</td>
-          <td><input type="radio" name="answer" value="No" checked>No<input type="radio" name="answer" value="Yes">Yes </td> 
-        </tr> 
-        <tr>
-             <td class="alignright">Best days to contact you:</td>
 
-            <td class="alignleft"><input type="checkbox" name="days of week" value="M" checked>M
-                <input type="checkbox" name="days of week" value="T">T
-                <input type="checkbox" name="days of week" value="W">W
-                <input type="checkbox" name="days of week" value="Th">Th
-                <input type="checkbox" name="days of week" value="F">F </td>     
-                
-        </tr>
-        <tr> 
-              <td class="alignleft"></td>   
-              <td><input type="submit" value ="Send Request"></td> 
-        </tr>                 
-       </table>
-       </form>
+         <div class="container">
+          <form action="fakePage.html" method="POST">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label class="control-label col-sm-1" for="name">Name:</label>
+      <div class="col-sm-11">
+        <input type="text" class="form-control" id="name">
+        <div class ="row">
+       </div>
+      </div> 
+
+      <div class="form-group"> 
+      <label class="control-label col-sm-1" for="name">Email:</label>
+      <div class="col-sm-11">
+        <input type="email" class="form-control" id="email">
+       </div>
+      </div>  
+
+      <div class="form-group"> 
+      <label class="control-label col-sm-1" for="phone">Phone:</label>
+      <div class="col-sm-11">
+        <input type="email" class="form-control" id="email">
+       </div>
+      </div>  
+    
+    <div class="form-group">
+      <label for="Reason">Reason for Inquiry(select one):</label>
+      <select class="form-control" id="Reason">
+        <option>Catering</option>
+        <option>Private Party</option>
+        <option>Feedback</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+  
+
+    <div class="form-group">
+      <label for="comment">Additional Information:</label>
+      <textarea class="form-control" rows="2" id="comment"></textarea>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <p>Have you been to the restaurant?</p>
+  <form role="form">
+    <label class="radio-inline">
+      <input type="radio" name="answer">No
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="answer">Yes
+    </label>
+  </form>
+</div>
+
+<div class="container">
+    <p>Best days to contact you:</p>
+  <form role="form">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="M">M
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="T">T
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="W">W
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="Th">Th
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="F">F
+    </label>
+  </form>
+   </div>
+   <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">Send Request</button>
+      </div>
        <hr width="100%">
        <footer>
              <table class="footertable">
-                    
+                   
                 <tr>
                     <td class="blacktext">4432 Leavenworth Street Omaha, Nebraska 68105 </td>
                 </tr>
                 <tr>
                     <td class="blacktext">(402) 556-6464</td>
                 </tr>
-            </table> 
-         </footer> 
+            </table>
+         </footer>
         </div>
      </body>
     </html>
